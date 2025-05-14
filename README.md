@@ -11,7 +11,7 @@
 </p>
 
 [![arXiv](https://img.shields.io/badge/arXiv-2407.06886-orange)]()
-[![](https://img.shields.io/badge/Paper-%F0%9F%93%96-yellow)](https://github.com/jackeyzengl/Embodied_Intelligent_Industrial_Robotics_Paper_List/blob/main/Embodied_Intelligent_Industrial_Robotics_Concepts_and_Techniques.pdf)
+[![](https://img.shields.io/badge/Paper-%F0%9F%93%96-yellow)](Embodied_Intelligent_Industrial_Robotics_Concepts_and_Techniques.pdf)
 [![](https://img.shields.io/badge/Project-%F0%9F%9A%80-pink)](https://github.com/jackeyzengl/Embodied_Intelligent_Industrial_Robotics_Paper_List)
 
 #### We appreciate any useful suggestions for improvement of this paper list or survey from peers. Please raise issues or send an email to **zenglong@sz.tsinghua.edu.cn** and **zcr23@mails.tsinghua.edu.cn**. Thanks for your cooperation! We also welcome your pull requests for this project!
