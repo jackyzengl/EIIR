@@ -10,7 +10,7 @@
 <img src="IMMV.png" width="180">
 </p>
 
-[![arXiv](https://img.shields.io/badge/arXiv-2407.06886-orange)]()
+[![arXiv](https://img.shields.io/badge/arXiv-2505.09305-orange)](https://arxiv.org/abs/2505.09305#)
 [![](https://img.shields.io/badge/Paper-%F0%9F%93%96-yellow)](Embodied_Intelligent_Industrial_Robotics_Concepts_and_Techniques.pdf)
 [![](https://img.shields.io/badge/Project-%F0%9F%9A%80-pink)](https://github.com/jackeyzengl/Embodied_Intelligent_Industrial_Robotics_Paper_List)
 
@@ -19,7 +19,7 @@
 ![Concept](EIIR_Concept.png "Concept")
 ![Framework](EIIR_Framework.png "Framework")
 
-[**Embodied Intelligent Industrial Robotics: Concepts and Techniques**](https://arxiv.org/pdf/2407.06886)
+[**Embodied Intelligent Industrial Robotics: Concepts and Techniques**](https://arxiv.org/pdf/2505.09305)
 
 [Chaoran Zhang](https://orcid.org/0009-0003-5190-7104), Chenhao Zhang, Zhaobo Xu, [Qinghongbing Xie](https://github.com/binicey), [Pingfa Feng](https://me.tsinghua.edu.cn/info/1097/1576.htm), [Long Zeng](https://jackyzengl.github.io/)
 
@@ -36,8 +36,8 @@ The framework includes **four main modules**: world model, high-level task plann
 We also review **the current development of technologies related to each module** and highlight recent progress in adapting them to industrial applications. Finally, we summarize the key challenges EIIR faces in industrial scenarios and suggest future research directions. We believe that EIIR technology will shape the next generation of industrial robotics. Industrial systems based on embodied intelligent industrial robots offer strong potential for enabling intelligent manufacturing. We will continue to track and summarize new research in this area and hope this review will serve as a valuable reference for scholars and engineers interested in industrial embodied intelligence. Together, we can help drive the rapid advancement and application of this technology. 
 
 ## 💥 Update Log 
-* [2025.05.14] We release the first version of the survey on EIIR！ [[PDF]](https://arxiv.org/pdf/2407.06886)
-* [2025.05.14] We release the first version of the paper list for Embodied Intelligent Industrial Robotics (EIIR). This page is continually updating!
+* [2025.05.15] We release the first version of the survey on EIIR！ [[PDF]](https://arxiv.org/pdf/2505.09305)
+* [2025.05.15] We release the first version of the paper list for Embodied Intelligent Industrial Robotics (EIIR). This page is continually updating!
 
 
 
@@ -52,7 +52,7 @@ We also review **the current development of technologies related to each module*
 
 ## <a id="concepts-surveys"> Concepts & Surveys <a href="#table-of-contents">🔝</a> </a> 
 
-* **Aligning Cyber Space with Physical World: A Comprehensive Survey on Embodied AI**, axXiv, 2024       
+* **Aligning Cyber Space with Physical World: A Comprehensive Survey on Embodied AI**, arXiv, 2024       
 Y. Liu, W. Chen, Y. Bai, J.-H. Luo, X. Song, K. Jiang, Z. Li, G. Zhao, J. Lin, G. Li, W. Gao, L. Lin  
 [[Paper](https://arxiv.org/pdf/2407.06886)]
 
@@ -1327,8 +1327,14 @@ C. Gan, J. Schwartz, S. Alter, M. Schrimpf, J. Traer, J. De Freitas, J. Kubilius
 If you think this survey is helpful, please feel free to leave a star ⭐️ and cite our paper:
 
 ```bibtex
-@article{
-
+@misc{zhang2025embodiedintelligentindustrialrobotics,
+      title={Embodied Intelligent Industrial Robotics: Concepts and Techniques}, 
+      author={Chaoran Zhang and Chenhao Zhang and Zhaobo Xu and Qinghongbing Xie and Pingfa Feng and Long Zeng},
+      year={2025},
+      eprint={2505.09305},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2505.09305}, 
 }
 ```
 ## 👏 Acknowledgements
