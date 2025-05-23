@@ -1,6 +1,6 @@
 <br>
 <p align="center">
-<h1 align="center"><strong>Paper list for Embodied Intelligent Industrial Robotics (EIIR)</strong></h1>
+<h1 align="center"><strong>Paper List for Embodied Intelligent Industrial Robotics (EIIR)</strong></h1>
   <p align="center">
     <a href='https://jackyzengl.github.io/' target='_blank'>THU IMMV Lab</a>&emsp;
   </p>
@@ -19,7 +19,7 @@
 ![Concept](EIIR_Concept.png "Concept")
 ![Framework](EIIR_Framework.png "Framework")
 
-[**Embodied Intelligent Industrial Robotics: Concepts and Techniques**](https://arxiv.org/pdf/2505.09305)
+[**Embodied intelligent industrial robotics: Concepts and techniques**](https://arxiv.org/pdf/2505.09305)
 
 [Chaoran Zhang](https://orcid.org/0009-0003-5190-7104), Chenhao Zhang, Zhaobo Xu, [Qinghongbing Xie](https://github.com/binicey), [Pingfa Feng](https://me.tsinghua.edu.cn/info/1097/1576.htm), [Long Zeng](https://jackyzengl.github.io/)
 
@@ -29,11 +29,12 @@
 
 ## 🏠 About
 
-In recent years, embodied intelligent robotics (EIR) has made significant progress in multi-modal perception, autonomous decision-making, and physical interaction. Some robots have already been tested in general-purpose scenarios such as homes and shopping malls. We aim to advance the research and application of embodied intelligence in industrial scenes. However, current EIR lacks a deep understanding of industrial environment semantics and the normative constraints among industrial operating objects. To address this gap, this paper first reviews the history of industrial robotics and the mainstream EIR frameworks. We then introduce the concept of the **embodied intelligent industrial robotics (EIIR)** and propose **a knowledge-driven EIIR technology framework** for industrial environments.
+In recent years, embodied intelligent robotics (EIR) advances significantly in  multi-modal perception, autonomous decision-making, and physical interaction. Some robots have already been tested in general-purpose scenarios, such as homes and shopping malls. However, EIR currently lacks a deep understanding of the semantics of industrial environments and the normative constraints between industrial operating objects. The goal of this paper is to advance the research and application of embodied intelligence in industrial scenarios. This paper first reviews the history of industrial robotics and the mainstream EIR frameworks. Herein, the concept of **embodied intelligent industrial robotics (EIIR)** is formulated and **a knowledge-driven EIIR technical framework** for industrial environments is proposed. 
 
-The framework includes **four main modules**: world model, high-level task planner, low-level skill controller, and simulator. The world model provides industrial working environment knowledge (such as semantic map) and industrial operating object knowledge (such as knowledge graph) that large language model (LLM) lacks. The high-level task planner breaks down natural language tasks into a series of subtasks. The low-level skill controller translates these subtasks into specific, executable skill sequences to realize the physical execution of industrial tasks. The simulator models kinematics, control logic, and environmental interactions to support algorithm development, virtual commissioning, and digital twins at both the single-robot and full-production-line scales.
+The framework includes **four primary modules**: a world model, a high-level task planner, a low-level skill controller, and a simulator. The world model provides knowledge of industrial working environment (such as semantic maps) and industrial operating object (such as knowledge graphs) that large language models (LLMs) lack. The high-level task planner decomposes natural language tasks into a series of subtasks. The low-level skill controller translates these subtasks into specific, executable skill sequences to achieve physical execution. The simulator models the kinematics, control logic, and environmental interactions, thereby enabling algorithm development, virtual commissioning, and digital twins at both single-robot and full-production-line scales. 
 
-We also review **the current development of technologies related to each module** and highlight recent progress in adapting them to industrial applications. Finally, we summarize the key challenges EIIR faces in industrial scenarios and suggest future research directions. We believe that EIIR technology will shape the next generation of industrial robotics. Industrial systems based on embodied intelligent industrial robots offer strong potential for enabling intelligent manufacturing. We will continue to track and summarize new research in this area and hope this review will serve as a valuable reference for scholars and engineers interested in industrial embodied intelligence. Together, we can help drive the rapid advancement and application of this technology. 
+**The development of techniques related to each module** are also thoroughly discussed, and recent progress regarding their adaption to industrial applications is emphasized. Finally, the key challenges that EIIR encounters in industrial scenarios are summarized and future research directions are suggested. The authors believe that EIIR technology is shaping the next generation of industrial robotics. EIIR-based industrial systems have strong potential to enable intelligent manufacturing. It is expected that this review could serve as a valuable reference for scholars and engineers that are interested in industrial embodied intelligence. Together, scholars can use this research to drive the rapid advancement and application of EIIR techniques.
+
 
 ## 💥 Update Log 
 * [2025.05.15] We release the first version of the survey on EIIR！ [[PDF]](https://arxiv.org/pdf/2505.09305)
