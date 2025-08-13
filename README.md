@@ -21,7 +21,7 @@
 
 [**Embodied intelligent industrial robotics: Concepts and techniques**](https://arxiv.org/pdf/2505.09305)
 
-[Chaoran Zhang](https://orcid.org/0009-0003-5190-7104), Chenhao Zhang, Zhaobo Xu, [Qinghongbing Xie](https://github.com/binicey), [Pingfa Feng](https://me.tsinghua.edu.cn/info/1097/1576.htm), [Long Zeng](https://jackyzengl.github.io/)
+[Chaoran Zhang](https://orcid.org/0009-0003-5190-7104), Chenhao Zhang, Zhaobo Xu, [Qinghongbing Xie](https://github.com/binicey), Jinliang Hou, [Pingfa Feng](https://me.tsinghua.edu.cn/info/1097/1576.htm), [Long Zeng](https://jackyzengl.github.io/)
 
 <p align="center">
 <img src="./Survey.png" width="800">
@@ -29,16 +29,15 @@
 
 ## 🏠 About
 
-In recent years, embodied intelligent robotics (EIR) advances significantly in  multi-modal perception, autonomous decision-making, and physical interaction. Some robots have already been tested in general-purpose scenarios, such as homes and shopping malls. However, EIR currently lacks a deep understanding of the semantics of industrial environments and the normative constraints between industrial operating objects. The goal of this paper is to advance the research and application of embodied intelligence in industrial scenarios. This paper first reviews the history of industrial robotics and the mainstream EIR frameworks. Herein, the concept of **embodied intelligent industrial robotics (EIIR)** is formulated and **a knowledge-driven EIIR technical framework** for industrial environments is proposed. 
+In order to work more efficiently, accurately, reliably, and safely in industrial scenarios, robots should have at least general knowledge, working-environment knowledge, and operating-object knowledge. These pose significant challenges to existing embodied intelligent robotics (EIR) techniques. Thus, this paper first briefly reviews the history of industrial robotics and analyzes the limitations of mainstream EIR frameworks. Then, **a knowledge-driven technical framework of embodied intelligent industrial robotics (EIIR)** is proposed for various industrial environments. It has **five modules:** a world model, a high-level task planner, a low-level skill controller, a simulator, and a physical system. The world model provides knowledge of industrial working environment (such as semantic maps) and industrial operating object (such as knowledge graphs) that multi-modal large language models (MLLMs) lack. The high-level task planner decomposes tasks described with natural language into a series of subtasks. The low-level skill controller translates these subtasks into specific physical-executable sequential skills. The simulator models the kinematics, control logic, and environmental interactions, thereby enabling algorithm development, virtual commissioning, and digital twins at both single-robot and full-production-line scales. 
 
-The framework includes **four primary modules**: a world model, a high-level task planner, a low-level skill controller, and a simulator. The world model provides knowledge of industrial working environment (such as semantic maps) and industrial operating object (such as knowledge graphs) that large language models (LLMs) lack. The high-level task planner decomposes natural language tasks into a series of subtasks. The low-level skill controller translates these subtasks into specific, executable skill sequences to achieve physical execution. The simulator models the kinematics, control logic, and environmental interactions, thereby enabling algorithm development, virtual commissioning, and digital twins at both single-robot and full-production-line scales. 
-
-**The development of techniques related to each module** are also thoroughly discussed, and recent progress regarding their adaption to industrial applications is emphasized. Finally, the key challenges that EIIR encounters in industrial scenarios are summarized and future research directions are suggested. The authors believe that EIIR technology is shaping the next generation of industrial robotics. EIIR-based industrial systems have strong potential to enable intelligent manufacturing. It is expected that this review could serve as a valuable reference for scholars and engineers that are interested in industrial embodied intelligence. Together, scholars can use this research to drive the rapid advancement and application of EIIR techniques.
+**The development of techniques related to each module** are also thoroughly reviewed, and recent progress regarding their adaption to industrial applications are discussed. A case study is given to demonstrate the newly proposed EIIR framework’s applicability to real-world assembly system. Finally, the key challenges that EIIR encounters in industrial scenarios are summarized and future research directions are suggested. The authors believe that EIIR technology is shaping the next generation of industrial robotics and EIIR-based industrial systems supply a new technological paradigm for intelligent manufacturing. It is expected that this review could serve as a valuable reference for scholars and engineers that are interested in industrial embodied intelligence. Together, scholars can use this research to drive their rapid advancement and application of EIIR techniques.
 
 
 ## 💥 Update Log 
 * [2025.05.15] We release the first version of the survey on EIIR！ [[PDF]](https://arxiv.org/pdf/2505.09305)
 * [2025.05.15] We release the first version of the paper list for Embodied Intelligent Industrial Robotics (EIIR). This page is continually updating!
+* [2025.08.13] We have updated the project and paper! We added the Sim-to-real section, a case study of EIIR-based assembly system and other newest works.
 
 
 
@@ -50,16 +49,24 @@ The framework includes **four primary modules**: a world model, a high-level tas
 - [Low-level Skill Controller](#low-level)
 - [Simulators](#simulators)
 
-
 ## <a id="concepts-surveys"> Concepts & Surveys <a href="#table-of-contents">🔝</a> </a> 
+
+* **A Survey of Embodied AI: From Simulators to Research Tasks**, IEEE Transactions on Emerging Topics in Computational Intelligence, 2022       
+J. Duan, S. Yu, H.L. Tan, H. Zhu, C. Tan  
+[[Paper](https://ieeexplore.ieee.org/abstract/document/9687596)]
+
+* **Unveiling the dynamics of AI applications: A review of reviews using scientometrics and BERTopic modeling**, Journal of Innovation & Knowledge, 2024       
+R. Raman, D. Pattnaik, L. Hughes, P. Nedungadi  
+[[Paper](https://www.sciencedirect.com/science/article/pii/S2444569X24000568)]
 
 * **Aligning Cyber Space with Physical World: A Comprehensive Survey on Embodied AI**, arXiv, 2024       
 Y. Liu, W. Chen, Y. Bai, J.-H. Luo, X. Song, K. Jiang, Z. Li, G. Zhao, J. Lin, G. Li, W. Gao, L. Lin  
 [[Paper](https://arxiv.org/pdf/2407.06886)]
 
-* **A Survey of Embodied AI: From Simulators to Research Tasks**, IEEE Transactions on Emerging Topics in Computational Intelligence, 2022       
-J. Duan, S. Yu, H.L. Tan, H. Zhu, C. Tan  
-[[Paper](https://ieeexplore.ieee.org/abstract/document/9687596)]
+* **When Embodied AI Meets Industry 5.0: Human-Centered Smart Manufacturing**, IEEE/CAA Journal of Automatica Sinica, 2025       
+J. Xu, Q. Sun, Q.L. Han, Y. Tang  
+[[Paper](https://ieeexplore.ieee.org/abstract/document/10909141)]
+
 
 * **Embodied Intelligence: A Synergy of Morphology, Action, Perception and Learning**, ACM Computing Surveys, 2025       
 H. Liu, D. Guo, A. Cangelosi  
@@ -152,6 +159,14 @@ A. Nordmann, N. Hochgeschwender, D. Wigand, S. Wrede
 * **Springer Handbook of Robotics**, Springer, 2008       
 B. Siciliano, O. Khatib  
 [[Book](https://link.springer.com/book/10.1007/978-3-319-32552-1?source=shoppingads&locale=en-jp&gclid=Cj0KCQiAwJWdBhCYARIsAJc4idCcF2us102UDVGHpi9py3j3kDIRfTV8W-cT0Jx8dgDKWGwDZj2053EaAqIdEALw_wcB)]
+
+* **Review of simultaneous localization and mapping (SLAM) for construction robotics applications**, Automation in Construction, 2024         
+A. Yarovoi, Y.K. Cho   
+[[Paper](https://www.sciencedirect.com/science/article/abs/pii/S0926580524000803)]
+
+* **Review on scene graph generation methods**, Multiagent and Grid Systems, 2024         
+M. S, S.N. C  
+[[Paper](https://dl.acm.org/doi/10.3233/MGS-230132)]
 
 ## <a id="world-model">  World Model <a href="#table-of-contents">🔝</a> </a>
 
@@ -254,6 +269,10 @@ F. Mo, H.U. Rehman, F.M. Monetti, J.C. Chaplin, D. Sanderson, A. Popov, A. Maffe
 D. Zhong, S. Miao, R. Miao, F. Sun, Z. Wen, H. Huang, N. Wang   
 [[Paper](https://link.springer.com/chapter/10.1007/978-981-99-2789-0_24)]
 
+* **Reconfigurable flexible assembly model and implementation for cross-category products**, Journal of Manufacturing Systems, 2024         
+Z. Xu, C. Zhang, S. Hu, Z. Han, P. Feng, L. Zeng  
+[[Paper](https://www.sciencedirect.com/science/article/abs/pii/S0278612524001857)]
+
 ## <a id="high-level">  High-level Task Planner <a href="#table-of-contents">🔝</a> </a>
 
 ### General Task planning
@@ -304,6 +323,19 @@ J.P. Macdonald, R. Mallick, A.B. Wollaber, J.D. Peña, N. McNeese, H.C. Siu
 * **Plug in the Safety Chip: Enforcing Constraints for LLM-driven Robot Agents**, ICRA, 2024       
 Z. Yang, S.S. Raman, A. Shah, S. Tellex  
 [[Paper](https://ieeexplore.ieee.org/abstract/document/10611447)]
+* **LLM-Empowered Embodied Agent for Memory-Augmented Task Planning in Household Robotics**, Austrian Robotics Workshop, 2025      
+M. Glocker, P. Hönig, M. Hirschmanner, M. Vincze  
+[[Paper](https://arxiv.org/abs/2504.21716)]
+* **Safety Aware Task Planning via Large Language Models in Robotics**, Arxiv, 2025      
+A.A. Khan, M. Andrev, M.A. Murtaza, S. Aguilera, R. Zhang, J. Ding, S. Hutchinson, A. Anwar 
+[[Paper](https://arxiv.org/abs/2503.15707)]
+* **FCRF: Flexible Constructivism Reflection for Long-Horizon Robotic Task Planning with Large Language Models**, IROS, 2025      
+Y.F. Song, J.T. Zhang, Z. Gu, Q.M. Liang, T.C. Hu, W. Song, S.Q. Zhu
+[[Paper](https://arxiv.org/abs/2507.14975)]
+* **Pretraining a Unified PDDL Domain from Real-World Demonstrations for Generalizable Robot Task Planning**,	arXiv, 2025      
+H.M. Ye, Y.X. Xiao, C.W. Lu, P.P. Cai
+[[Paper](https://arxiv.org/abs/2507.21545)]
+
 
 #### VLA-based
 * **A Survey on Vision-Language-Action Models for Embodied AI**, ArXiv, 2024       
@@ -336,6 +368,15 @@ S. Li, J. Wang, R. Dai, W. Ma, W.Y. Ng, Y. Hu, Z. Li
 * **VLABench: A Large-Scale Benchmark for Language-Conditioned Robotics Manipulation with Long-Horizon Reasoning Tasks**, ArXiv, 2024       
 S. Zhang, Z. Xu, P. Liu, X. Yu, Y. Li, Q. Gao, Z. Fei, Z. Yin, Z. Wu, Y.-G. Jiang, X. Qiu  
 [[Paper](https://arxiv.org/html/2412.18194)]
+* **VLA-RL: Towards Masterful and General Robotic Manipulation with Scalable Reinforcement Learning**, ArXiv, 2025       
+G.x. Lu, W.k. Guo, C.B Zhang, Y.H. Zhou, H.N. Jiang, Z.F. Gao, Y.S. Tang, Z.W. Wang  
+[[Paper](https://arxiv.org/abs/2505.18719)]
+* **MoLe-VLA: Dynamic Layer-skipping Vision Language Action Model via Mixture-of-Layers for Efficient Robot Manipulation**, ArXiv, 2025       
+R.Y. Zhang, M.H. Dong, Y. Zhang, L. Heng, X.W. Chi, G.L. Dai, L. Du, Y. Du, S.H. Zhang 
+[[Paper](https://arxiv.org/abs/2503.20384)]
+* **VLA-OS: Structuring and Dissecting Planning Representations and Paradigms in Vision-Language-Action Models**, ArXiv, 2025       
+C.K. Gao, Z.X. Liu, Z.H. Chi, J.S. Huang, X. Fei, Y.W. Hou, Y.X. Zhang, Y.D. Lin, Z.R. Fang, Z.Y. Jiang, L.w Shao 
+[[Paper](https://arxiv.org/abs/2506.17561)]
 
 ### Industrial Task planning
 #### Knowledge and Skill-based
@@ -1300,6 +1341,34 @@ C. Li, F. Xia, R. Martín-Martín, M. Lingelbach, S. Srivastava, B. Shen, K.E. V
 C. Gan, J. Schwartz, S. Alter, M. Schrimpf, J. Traer, J. De Freitas, J. Kubilius, A. Bhandwaldar, N. Haber, M. Sano   
 [[Paper](https://openreview.net/pdf?id=db1InWAwW2T)]
 
+* **Domain randomization for sim2real transfer of automatically generated grasping datasets**, IEEE international conference on robotics and automation (ICRA), 2024         
+J. Huber, F. Hélénon, H. Watrelot, F.B. Amar, S. Doncieux   
+[[Paper](https://arxiv.org/abs/2310.04517)]
+
+* **Sim-to-Real Learning for Humanoid Box Loco-Manipulation**, IEEE international conference on robotics and automation (ICRA), 2024         
+J. Dao, H. Duan, A. Fern   
+[[Paper](https://events.infovaya.com/uploads/documents/pdfviewer/a8/0f/135091-3250.pdf)]
+
+* **Domain Adaption as Auxiliary Task for Sim-to-Real Transfer in Vision-based Neuro-Robotic Control**, International Joint Conference on Neural Networks (IJCNN), 2024         
+C. Gäde, J.G. Habekost, S. Wermter   
+[[Paper](https://ieeexplore.ieee.org/document/10650722)]
+
+* **Easi: Evolutionary adversarial simulator identification for sim-to-real transfer**,  Advances in Neural Information Processing Systems, 2024         
+H. Dong, H. Fu, W. Xu, Z. Zhou, C. Chen   
+[[Paper](https://papers.nips.cc/paper_files/paper/2024/file/0caf026b344e6c455efc12fe3d254e9f-Paper-Conference.pdf)]
+
+* **Dynamics as Prompts: In-Context Learning for Sim-to-Real System Identifications,**,  IEEE Robotics and Automation Letters, 2025         
+H. Dong, H. Fu, W. Xu, Z. Zhou, C. Chen   
+[[Paper](https://papers.nips.cc/paper_files/paper/2024/file/0caf026b344e6c455efc12fe3d254e9f-Paper-Conference.pdf)]
+
+* **Reconciling reality through simulation: A real-to-sim-to-real approach for robust manipulation**, arXiv, 2024         
+M. Torne, A. Simeonov, Z. Li, A. Chan, T. Chen, A. Gupta, P. Agrawal,   
+[[Paper](https://arxiv.org/abs/2403.03949)]
+
+* **VR-Robo: A Real-to-Sim-to-Real Framework for Visual Robot Navigation and Locomotion**,  IEEE Robotics and Automation Letters, 2025         
+S. Zhu, L. Mou, D. Li, B. Ye, R. Huang, H. Zhao   
+[[Paper](https://arxiv.org/abs/2502.01536)]
+
 
 ### Production Line Simulators
 
@@ -1322,6 +1391,33 @@ C. Gan, J. Schwartz, S. Alter, M. Schrimpf, J. Traer, J. De Freitas, J. Kubilius
 * **Visual Components**, Visual Components, [[Page](https://www.visualcomponents.com/products/)]
 
 * **Tecnomatix**, Siemens, [[Page](https://plm.sw.siemens.com/en-US/tecnomatix/?srsltid=AfmBOoqcCMdYptEBiK_oNNfDAxf3mXC4GaexNR-_spDt9cnrSL0W3j6T)]
+
+
+### Sim-to-real Techniques
+
+* **Learning invariant feature spaces to transfer skills with reinforcement learning**, arXiv, 2017         
+A. Gupta, C. Devin, Y. Liu, P. Abbeel, S. Levine   
+[[Paper](https://arxiv.org/abs/1703.02949)]
+
+* **Domain Adaptation Using System Invariant Dynamics Models**, Proceedings of Machine Learning Research, 2021         
+S.J. Wang, A.M. Johnson   
+[[Paper](https://proceedings.mlr.press/v144/wang21c/wang21c.pdf)]
+
+* **Natural Language Can Help Bridge the Sim2Real Gap**, RSS 2024 Workshop: Data Generation for Robotics, 2024         
+A. Yu, A. Foote, R. Mooney, R. Martín-Martín   
+[[Paper](https://arxiv.org/abs/1703.02949)]
+
+* **Overcoming the Sim-to-Real Gap: Leveraging Simulation to Learn to Explore for Real-World RL**, Advances in Neural Information Processing Systems, 2024         
+A. Wagenmaker, K. Huang, L. Ke, K. Jamieson, A. Gupta  
+[[Paper](https://proceedings.neurips.cc/paper_files/paper/2024/file/8fa068ffe59817175d176bd75641fe16-Paper-Conference.pdf)]
+
+* **Transic: Sim-to-real policy transfer by learning from online correction**, arXiv, 2024         
+Y. Jiang, C. Wang, R. Zhang, J. Wu, L. Fei-Fei   
+[[Paper](https://arxiv.org/abs/2405.10315)]
+
+* **Enabling technologies and tools for digital twin**, Journal of Manufacturing Systems, 2021         
+Q. Qi, F. Tao, T. Hu, N. Anwer, A. Liu, Y. Wei, L. Wang, A.Y.C. Nee   
+[[Paper](https://arxiv.org/abs/1703.02949)]
 
 
 ## 📰 Citation 
