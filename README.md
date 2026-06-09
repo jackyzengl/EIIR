@@ -19,7 +19,7 @@
 ![Concept](EIIR_Concept.png "Concept")
 ![Framework](EIIR_Framework.png "Framework")
 
-[**Embodied intelligent industrial robotics: Concepts and techniques**](https://arxiv.org/pdf/2505.09305)
+[**Embodied intelligent industrial robotics: Framework and techniques**](https://arxiv.org/pdf/2505.09305)
 
 [Chaoran Zhang](https://orcid.org/0009-0003-5190-7104), Chenhao Zhang, Zhaobo Xu, [Qinghongbing Xie](https://github.com/binicey), Jinliang Hou, [Pingfa Feng](https://me.tsinghua.edu.cn/info/1097/1576.htm), [Long Zeng](https://jackyzengl.github.io/)
 
@@ -38,7 +38,7 @@ In order to work more efficiently, accurately, reliably, and safely in industria
 * [2025.05.15] We release the first version of the survey on EIIR！ [[PDF]](https://arxiv.org/pdf/2505.09305)
 * [2025.05.15] We release the first version of the paper list for Embodied Intelligent Industrial Robotics (EIIR). This page is continually updating!
 * [2025.08.13] We have updated the project and paper! We added the Sim-to-real section, a case study of EIIR-based assembly system and other newest works.
-
+* [2026.06.02] Our survey paper on EIIR has been accepted by the Journal of Manufacturing Systems!
 
 
 ## <a id="table-of-contents">📚 Table of Contents </a>
