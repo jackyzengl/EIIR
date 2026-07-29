@@ -38,7 +38,7 @@ In order to work more efficiently, accurately, reliably, and safely in industria
 * [2025.05.15] We release the first version of the survey on EIIR！ [[PDF]](https://arxiv.org/pdf/2505.09305)
 * [2025.05.15] We release the first version of the paper list for Embodied Intelligent Industrial Robotics (EIIR). This page is continually updating!
 * [2025.08.13] We have updated the project and paper! We added the Sim-to-real section, a case study of EIIR-based assembly system and other newest works.
-* [2026.06.02] Our survey paper on EIIR has been accepted by the Journal of Manufacturing Systems!
+* [2026.06.02] Our survey paper on EIIR has been accepted by the Journal of Manufacturing Systems！ [[Paper]](https://doi.org/10.1016/j.jmsy.2026.06.001)
 
 
 ## <a id="table-of-contents">📚 Table of Contents </a>
@@ -1434,5 +1434,20 @@ If you think this survey is helpful, please feel free to leave a star ⭐️ and
       url={https://arxiv.org/abs/2505.09305}, 
 }
 ```
+
+```bibtex
+@article{zhang2026embodied,
+  title={Embodied intelligent industrial robotics: Framework and techniques},
+  author={Zhang, Chaoran and Zhang, Chenhao and Xu, Zhaobo and Xie, Qinghongbing and Hou, Jinliang and Feng, Pingfa and Zeng, Long},
+  journal={Journal of Manufacturing Systems},
+  volume={88},
+  pages={158--189},
+  year={2026},
+  publisher={Elsevier},
+  doi={10.1016/j.jmsy.2026.06.001},
+  url={https://doi.org/10.1016/j.jmsy.2026.06.001}
+}
+```
+
 ## 👏 Acknowledgements
 The template for this project was forked from [HCPLab-SYSU's website](https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List?tab=readme-ov-file). Thanks for sharing the amazing template!
