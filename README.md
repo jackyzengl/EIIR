@@ -1424,18 +1424,6 @@ Q. Qi, F. Tao, T. Hu, N. Anwer, A. Liu, Y. Wei, L. Wang, A.Y.C. Nee
 If you think this survey is helpful, please feel free to leave a star ⭐️ and cite our paper:
 
 ```bibtex
-@misc{zhang2025embodiedintelligentindustrialrobotics,
-      title={Embodied Intelligent Industrial Robotics: Concepts and Techniques}, 
-      author={Chaoran Zhang and Chenhao Zhang and Zhaobo Xu and Qinghongbing Xie and Pingfa Feng and Long Zeng},
-      year={2025},
-      eprint={2505.09305},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2505.09305}, 
-}
-```
-
-```bibtex
 @article{zhang2026embodied,
   title={Embodied intelligent industrial robotics: Framework and techniques},
   author={Zhang, Chaoran and Zhang, Chenhao and Xu, Zhaobo and Xie, Qinghongbing and Hou, Jinliang and Feng, Pingfa and Zeng, Long},
